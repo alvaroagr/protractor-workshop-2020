@@ -6,9 +6,9 @@ export const config: Config = {
   specs: ['../test/google.spec.js'],
   SELENIUM_PROMISE_MANAGER: false,
   capabilities: {
-    browserName: "chrome",
+    browserName: 'chrome',
     chromeOptions: {
-      args: ["--headless", "disable-gpu"]
+      args: ['--headless', 'disable-gpu']
     }
   },
   onPrepare: () => {
