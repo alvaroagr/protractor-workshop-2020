@@ -9,6 +9,9 @@ export const config: Config = {
     browser.ignoreSynchronization = true;
     reporter();
   },
-  getPageTimeout: 1000,
+  getPageTimeout: 30000,
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 120000
+  },
   directConnect:true
 };
