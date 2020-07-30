@@ -3,7 +3,8 @@ import { reporter } from './helpers/reporter';
 
 export const config: Config = {
   framework: 'jasmine',
-  specs: ['../test/google.spec.js'],
+  // specs: ['../test/google.spec.js'],
+  specs: ['../test/**/*.spec.js'],
   SELENIUM_PROMISE_MANAGER: false,
   capabilities: {
     browserName: 'chrome',
@@ -14,5 +15,7 @@ export const config: Config = {
   onPrepare: () => {
     browser.ignoreSynchronization = true;
     reporter();
-  }
+  },
+  getPageTimeout: 1000,
+  directConnect:true
 };
