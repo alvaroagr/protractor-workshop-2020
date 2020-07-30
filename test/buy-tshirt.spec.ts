@@ -19,31 +19,22 @@ describe('Buy a t-shirt', () => {
     await browser.get('http://automationpractice.com/');
 
     await menuContentPage.goToTShirtMenu();
-    await(browser.sleep(5000));
 
     await productListPage.goToAddToCart();
-    await(browser.sleep(5000));
 
     await productAddedModalPage.goToCheckoutButton();
-    await(browser.sleep(5000));
 
     await summaryStepPage.goToCheckoutSignIn();
-    await(browser.sleep(5000));
 
     await signInStepPage.fillEmailForm();
-    await(browser.sleep(5000));
 
     await addressStepPage.goToShippingPage();
-    await(browser.sleep(5000));
 
     await shippingStepPage.goToPaymentPage();
-    await(browser.sleep(5000));
 
     await paymentStepPage.goToBankPaymentPage();
-    await(browser.sleep(5000));
 
     await bankPaymentPage.confirmOrder();
-    await(browser.sleep(5000));
 
     await expect(orderSummaryPage.getOrderText()).toBe('Your order on My Store is complete.');
   });
