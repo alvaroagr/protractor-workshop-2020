@@ -4,7 +4,7 @@ export class OrderSummaryPage {
   private confirmationText: ElementFinder;
 
   constructor() {
-    this.confirmationText = $('#center_column > div > p > strong');
+    this.confirmationText = $('p.cheque-indent > strong');
   }
 
   public getOrderText() {
