@@ -17,7 +17,7 @@ describe('Open website', () => {
     describe('Add product to cart', () => {
       beforeAll(async () => {
         const productListPage: ProductListPage = new ProductListPage();
-        await productListPage.goToAddToCart();
+        await productListPage.selectProduct('Faded Short Sleeve T-shirts');
       });
 
       describe('Go to checkout', () => {
