@@ -6,7 +6,7 @@ export class ShippingStepPage {
 
   constructor () {
     this.tosRadioButton = $('#cgv');
-    this.checkoutButton = $('#form > p > button');
+    this.checkoutButton = $('button[name="processCarrier"]');
   }
 
   public async goToPaymentPage(): Promise<void> {

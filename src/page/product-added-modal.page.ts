@@ -4,7 +4,7 @@ export class ProductAddedModalPage {
   private checkoutButton: ElementFinder;
 
   constructor () {
-    this.checkoutButton = $('a.btn.btn-default.button.button-medium');
+    this.checkoutButton = $('a[title="Proceed to checkout"]');
   }
 
   public async goToCheckoutButton(): Promise<void> {
