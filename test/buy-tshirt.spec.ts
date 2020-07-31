@@ -36,7 +36,7 @@ describe('Open website', () => {
           describe('Fill user form, go to the address page', () => {
             beforeAll(async () => {
               const signInStepPage: SignInStepPage = new SignInStepPage();
-              await signInStepPage.fillEmailForm();
+              await signInStepPage.fillEmailForm('aperdomobo@gmail.com', 'WorkshopProtractor');
             });
 
             describe('Go to shipping page', () => {

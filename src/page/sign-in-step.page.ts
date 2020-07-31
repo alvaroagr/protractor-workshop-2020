@@ -11,9 +11,9 @@ export class SignInStepPage {
     this.passwordField = $('#passwd');
   }
 
-  public async fillEmailForm(): Promise<void> {
-    await this.emailField.sendKeys('aperdomobo@gmail.com');
-    await this.passwordField.sendKeys('WorkshopProtractor');
+  public async fillEmailForm(email: string, passwd: string): Promise<void> {
+    await this.emailField.sendKeys(email);
+    await this.passwordField.sendKeys(passwd);
     await this.signInButton.click();
   }
 }
