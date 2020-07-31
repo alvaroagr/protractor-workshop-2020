@@ -17,7 +17,7 @@ describe('Open website', () => {
     describe('Add product to cart', () => {
       beforeAll(async () => {
         const productListPage: ProductListPage = new ProductListPage();
-        await productListPage.goToAddToCart();
+        await productListPage.selectProduct('Faded Short Sleeve T-shirts');
       });
 
       describe('Go to checkout', () => {
@@ -36,7 +36,7 @@ describe('Open website', () => {
           describe('Fill user form, go to the address page', () => {
             beforeAll(async () => {
               const signInStepPage: SignInStepPage = new SignInStepPage();
-              await signInStepPage.fillEmailForm();
+              await signInStepPage.fillEmailForm('aperdomobo@gmail.com', 'WorkshopProtractor');
             });
 
             describe('Go to shipping page', () => {
