@@ -4,7 +4,6 @@ export class BankPaymentPage {
   private confirmButton: ElementFinder;
 
   constructor () {
-    // this.confirmButton = $('#cart_navigation > button');
     this.confirmButton = element(by.cssContainingText('span', 'I confirm my order'));
   }
 
